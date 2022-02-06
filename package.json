@@ -1,0 +1,23 @@
+{
+  "name": "temp-hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M4Beaini/Temp-Hello-World.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M4Beaini/Temp-Hello-World/issues"
+  },
+  "homepage": "https://github.com/M4Beaini/Temp-Hello-World#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
