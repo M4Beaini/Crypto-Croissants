@@ -6,6 +6,8 @@ const port = 3000;
 // const router = express.Router();
 //const path = require('path')//Include the Path module
 
+const path = require('path')
+
 app.use (express.json());
 app.listen (port,() => {
   console.log ("Hello world app");
@@ -42,7 +44,9 @@ let server = app.listen(3000, function(){
 // HELLO WORLD CODE
 
 app.get("/", (req, res) => {
-    res.send ("Hello World! Welcome to Crypto Croissants, the best croissants in the metaverse!");
+    //res.send ("Hello World! Welcome to Crypto Croissants, the best croissants in the metaverse!");
+
+    res.sendFile((path.join(__dirname, '/Homepage/homepage.html')));
 });
 
 
