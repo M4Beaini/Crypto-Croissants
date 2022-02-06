@@ -42,8 +42,9 @@ let server = app.listen(3000, function(){
 // HELLO WORLD CODE
 
 app.get("/", (req, res) => {
-    res.send ("Hello World!");
+    res.send ("Hello World! Welcome to Crypto Croissants, the best croissants in the metaverse!");
 });
+
 
 /*
 const http = require('http');
