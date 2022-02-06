@@ -46,7 +46,7 @@ let server = app.listen(3000, function(){
 app.get("/", (req, res) => {
     //res.send ("Hello World! Welcome to Crypto Croissants, the best croissants in the metaverse!");
 
-    res.sendFile((path.join(__dirname, '/HTML/index.html')));
+    res.sendFile((path.join(__dirname, '/webpages/index.html')));
 });
 
 
