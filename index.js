@@ -8,10 +8,14 @@ const port = 3000;
 
 const path = require('path')
 
-app.use (express.json());
+app.use(express.static(__dirname+'/webpages')); // sets static path - necessary for image serving
+
+
+//app.use (express.json());
 app.listen (port,() => {
   console.log ("Hello world app");
 });
+
 
 
 /*
