@@ -54,6 +54,12 @@ app.get("/", (req, res) => {
 });
 
 
+app.get("/aboutus", (req, res) => {
+  
+    res.sendFile((path.join(__dirname, '/webpages/about.html')));
+});
+
+
 /*
 const http = require('http');
 server = http.createServer(function (request, response) {
