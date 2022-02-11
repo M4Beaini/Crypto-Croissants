@@ -8,7 +8,7 @@ const port = 3000;
 
 const path = require('path')
 
-app.use(express.static(__dirname+'/webpages')); // sets static path - necessary for image serving
+
 
 
 //app.use (express.json());
@@ -16,6 +16,9 @@ app.listen (port,() => {
   console.log ("Hello world app");
 });
 
+
+
+app.use(express.static(__dirname+'/public')); // sets static path - necessary for image serving
 
 
 /*
@@ -47,17 +50,28 @@ let server = app.listen(3000, function(){
 
 // HELLO WORLD CODE
 
+
+
+
 app.get("/", (req, res) => {
     //res.send ("Hello World! Welcome to Crypto Croissants, the best croissants in the metaverse!");
 
-    res.sendFile((path.join(__dirname, '/webpages/index.html')));
+    res.sendFile((path.join(__dirname, '/public/index.html')));
 });
 
 
 app.get("/aboutus", (req, res) => {
   
-    res.sendFile((path.join(__dirname, '/webpages/about.html')));
+    res.sendFile((path.join(__dirname, '/public/about.html')));
 });
+
+
+app.get("/croissantfinder", (req, res) => {
+  
+  res.sendFile((path.join(__dirname, '/public/croissantfinder.html')));
+});
+
+
 
 
 /*
