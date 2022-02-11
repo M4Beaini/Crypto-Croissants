@@ -68,7 +68,7 @@ app.get("/aboutus", (req, res) => {
 
 app.get("/croissantfinder", (req, res) => {
   
-  res.sendFile((path.join(__dirname, '/public/croissantfinder.html')));
+  res.send("Blablabla");
 });
 
 
