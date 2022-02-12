@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title> Crypto Croissant Finder</title>
+<meta charset="utf-8">
+<title>Get the Value of Text Input Field in JavaScript</title>
 </head>
-
 <body>
-
-<h1>Croissant Found!</h1>
-
-
-
-
-
+    <input type="text" placeholder="Type your address..." id="myInput">
+    <button type="button" onclick="getInputValue();">Get croissant!</button>
+    
+    <script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("myInput").value;
+            
+            // Displaying the value
+            alert(inputVal);
+        }
+    </script>
 </body>
 </html>
